@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OD-Demo - Online Food Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000"
+        data-border-radius="small"></script>
+</head>
+
+<body class="bg-gray-50">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="/" class="flex-shrink-0"> <img class="h-8"
+                            src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="OD-Demo">
+                    </a>
+                    <div class="ml-8 relative"> <input type="text" placeholder="Enter delivery address"
+                            class="w-[400px] pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-custom focus:border-transparent">
+                        <i class="fas fa-map-marker-alt absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-custom">
+                        <i class="fas fa-search text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-custom relative">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span
+                            class="absolute -top-2 -right-2 bg-custom text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+                    </a>
+                    <button class="!rounded-button bg-custom text-white px-6 py-2 hover:bg-custom/90">Sign In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative bg-gray-900 h-[500px] overflow-hidden">
+            <img src="https://creatie.ai/ai/api/search-image?query=A stunning food delivery hero image featuring a collection of gourmet dishes arranged on a modern dining table with elegant place settings, warm ambient lighting, and professional food photography styling&width=1440&height=500&orientation=landscape&flag=75239244-e5b0-449d-95ee-e95bb8153700"
+                class="absolute inset-0 w-full h-full object-cover opacity-50">
+            <div class="relative max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl font-bold text-white mb-6">Delicious food delivered to your doorstep</h1>
+                    <div class="relative">
+                        <input type="text" placeholder="Search for food or restaurants"
+                            class="w-full pl-12 pr-4 py-4 rounded-lg text-lg focus:outline-none focus:ring-2 focus:ring-custom focus:border-transparent">
+                        <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex space-x-8 overflow-x-auto pb-4"> <a href="#"
+                    class="flex flex-col items-center min-w-[100px] group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-custom/10 flex items-center justify-center mb-2 group-hover:bg-custom/20">
+                        <i class="fas fa-pizza-slice text-custom text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-medium text-gray-700">Pizza</span>
+                </a>
+                <a href="#" class="flex flex-col items-center min-w-[100px] group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-custom/10 flex items-center justify-center mb-2 group-hover:bg-custom/20">
+                        <i class="fas fa-hamburger text-custom text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-medium text-gray-700">Burgers</span>
+                </a>
+                <a href="#" class="flex flex-col items-center min-w-[100px] group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-custom/10 flex items-center justify-center mb-2 group-hover:bg-custom/20">
+                        <i class="fas fa-bowl-rice text-custom text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-medium text-gray-700">Asian</span>
+                </a>
+                <a href="#" class="flex flex-col items-center min-w-[100px] group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-custom/10 flex items-center justify-center mb-2 group-hover:bg-custom/20">
+                        <i class="fas fa-ice-cream text-custom text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-medium text-gray-700">Desserts</span>
+                </a>
+                <a href="#" class="flex flex-col items-center min-w-[100px] group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-custom/10 flex items-center justify-center mb-2 group-hover:bg-custom/20">
+                        <i class="fas fa-coffee text-custom text-2xl"></i>
+                    </div>
+                    <span class="text-sm font-medium text-gray-700">Coffee</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h2 class="text-2xl font-bold mb-8">Featured Restaurants</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <a href="#" class="group">
+                    <div class="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4">
+                        <img src="https://creatie.ai/ai/api/search-image?query=A professional food photography shot of a modern restaurant interior with elegant table settings, warm lighting, and stylish decor against a clean, minimalist background&width=400&height=225&orientation=landscape&flag=74a410b4-c96f-46bb-8c6f-071e8e545908"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded text-sm font-medium">25-35 min
+                        </div>
+                    </div>
+                    <h3 class="font-semibold mb-1">The Italian Kitchen</h3>
+                    <div class="flex items-center text-sm text-gray-500 mb-1">
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <span>4.8</span>
+                        <span class="mx-2">•</span>
+                        <span>Italian</span>
+                        <span class="mx-2">•</span>
+                        <span>$$</span>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4"> <img
+                            src="https://creatie.ai/ai/api/search-image?query=A professional food photography shot of an Asian fusion restaurant interior with modern decor, ambient lighting, and authentic design elements against a clean background&width=400&height=225&orientation=landscape&flag=a9baf5aa-551d-4e12-9dec-390a4f4672cb"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded text-sm font-medium">15-25 min
+                        </div>
+                    </div>
+                    <h3 class="font-semibold mb-1">Sushi Master</h3>
+                    <div class="flex items-center text-sm text-gray-500 mb-1">
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <span>4.9</span>
+                        <span class="mx-2">•</span>
+                        <span>Japanese</span>
+                        <span class="mx-2">•</span>
+                        <span>$$$</span>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4"> <img
+                            src="https://creatie.ai/ai/api/search-image?query=A professional food photography shot of a trendy burger restaurant interior with industrial-style decor, neon signage, and casual dining atmosphere against a clean background&width=400&height=225&orientation=landscape&flag=e808a358-665b-4663-868e-392d9c1ed2e4"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded text-sm font-medium">20-30 min
+                        </div>
+                    </div>
+                    <h3 class="font-semibold mb-1">Burger House</h3>
+                    <div class="flex items-center text-sm text-gray-500 mb-1">
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <span>4.7</span>
+                        <span class="mx-2">•</span>
+                        <span>American</span>
+                        <span class="mx-2">•</span>
+                        <span>$$</span>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="relative aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-4"> <img
+                            src="https://creatie.ai/ai/api/search-image?query=A professional food photography shot of a Mediterranean restaurant interior with rustic charm, terracotta details, and warm lighting against a clean background&width=400&height=225&orientation=landscape&flag=0d1a66e3-7c99-4cb3-b543-bef0bc4d5b32"
+                            class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-3 right-3 bg-white px-2 py-1 rounded text-sm font-medium">30-40 min
+                        </div>
+                    </div>
+                    <h3 class="font-semibold mb-1">Mediterranean Delight</h3>
+                    <div class="flex items-center text-sm text-gray-500 mb-1">
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <span>4.6</span>
+                        <span class="mx-2">•</span>
+                        <span>Mediterranean</span>
+                        <span class="mx-2">•</span>
+                        <span>$$</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-100">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold mb-8">Special Offers</h2>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="bg-white rounded-lg overflow-hidden shadow-sm"> <img
+                                        src="https://creatie.ai/ai/api/search-image?query=A professional food photography composition featuring multiple dishes with a special offer or discount theme, vibrant colors, and appetizing presentation against a clean background&width=400&height=200&orientation=landscape&flag=a4318cdf-7367-43ba-bc99-f7f82296d262"
+                                        class="w-full h-48 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="font-semibold text-lg mb-2">50% OFF Your First Order</h3>
+                                        <p class="text-gray-600 text-sm">Use code: WELCOME50</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="bg-white rounded-lg overflow-hidden shadow-sm"> <img
+                                        src="https://creatie.ai/ai/api/search-image?query=A professional food photography composition showcasing a family meal deal with multiple dishes, drinks, and sides arranged attractively against a clean background&width=400&height=200&orientation=landscape&flag=40852e04-595a-4cb4-95e2-f2cbccbf70b5"
+                                        class="w-full h-48 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="font-semibold text-lg mb-2">Family Meal Deal</h3>
+                                        <p class="text-gray-600 text-sm">Save 30% on orders above $50</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                                    <img src="https://creatie.ai/ai/api/search-image?query=A professional food photography composition featuring healthy food options with a fresh and light theme, including salads and smoothies against a clean background&width=400&height=200&orientation=landscape&flag=f361ae59-b5ae-41b7-880e-e3b5ec4261e7"
+                                        class="w-full h-48 object-cover">
+                                    <div class="p-6">
+                                        <h3 class="font-semibold text-lg mb-2">Healthy Choice Bundle</h3>
+                                        <p class="text-gray-600 text-sm">20% off on all healthy options</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__bullets" data-glide-el="controls[nav]"> <button class="glide__bullet"
+                            data-glide-dir="=0"></button>
+                        <button class="glide__bullet" data-glide-dir="=1"></button>
+                        <button class="glide__bullet" data-glide-dir="=2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 bg-custom">
+            <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold text-white mb-6">Download the OD-Demo App</h2>
+                        <p class="text-white/90 mb-8">Get the best food delivery experience with our mobile app. Order
+                            food from your favorite restaurants, track your delivery in real-time, and enjoy exclusive
+                            app-only offers.</p>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="!rounded-button bg-black text-white px-6 py-3 flex items-center space-x-2"> <i
+                                    class="fab fa-apple text-2xl"></i>
+                                <div>
+                                    <div class="text-xs">Download on the</div>
+                                    <div class="font-semibold">App Store</div>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="!rounded-button bg-black text-white px-6 py-3 flex items-center space-x-2"> <i
+                                    class="fab fa-google-play text-2xl"></i>
+                                <div>
+                                    <div class="text-xs">Get it on</div>
+                                    <div class="font-semibold">Google Play</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="https://creatie.ai/ai/api/search-image?query=A 3D vector-style image with a clean, solid background color that contrasts significantly with the main theme. The content includes a modern smartphone displaying a food delivery app interface with vibrant colors and clean design&width=600&height=600&orientation=squarish&removebg=true&flag=52e53340-3b17-46f8-9898-0396e5cab022"
+                            class="w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="OD-Demo"
+                        class="h-8 mb-6">
+                    <p class="text-gray-400">The best food delivery service for your cravings</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">About Us</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About OD-Demo</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Partner with us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"> <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl"> <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 OD-Demo. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            gap: 32,
+            breakpoints: {
+                1024: {
+                    perView: 2
+                },
+                640: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    </script>
+</body>
+
+</html>
